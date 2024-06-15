@@ -1,6 +1,6 @@
 import { NS } from "@ns";
 
-export function calcBestTarget(ns: NS): String{
+export function calcBestTarget(ns: NS): string{
 const pHackLevel = ns.getHackingLevel();
   const servers0ports = ns.scan();
   var bestTarget = servers0ports[0];
@@ -20,5 +20,6 @@ const pHackLevel = ns.getHackingLevel();
   }
   // return the best server to target
   // meant to be used with controller script
+
   return bestTarget;
 }
